@@ -1,3 +1,9 @@
+to build library
+(changed sm_20 to sm_30)
+autoreconf
+./configure
+make
+
 Copyright 2012 Takatoshi Nakayama.
 
 This file is part of the CUMP Library.
