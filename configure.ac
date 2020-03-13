@@ -37,7 +37,10 @@ if test -z $CU ; then
 fi
 
 if test -z $CUFLAGS ; then
-  CUFLAGS="-arch=sm_20 $CXXFLAGS"
+# sm_20 deprecated from CUDA 9
+# sm_30 CUDA 5 and later
+#  CUFLAGS="-arch=sm_20 $CXXFLAGS"
+  CUFLAGS="-arch=sm_30 $CXXFLAGS"
 fi
 
 AC_SUBST(CU)
